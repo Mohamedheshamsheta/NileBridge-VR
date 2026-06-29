@@ -1,0 +1,6 @@
+{
+  "name": "Global Medical Interpretation & Local Guide Platform",
+  "description": "Connecting international clients and tourists with certified medical interpreters and cultural tour guides, styled with a luxury Egyptian aesthetic and interactive 3D elements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

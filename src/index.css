@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-alabaster: #FAF9F6;
+  --color-obsidian-black: #121212;
+  --color-baby-blue: #89CFF0;
+  --color-soft-cyan: #A2D9CE;
+  --color-medical-green: #10B981;
+
+  /* Legacy aliases to maintain backward compatibility but mapped to the new high-end palette */
+  --color-obsidian-navy: #0B0C10;
+  --color-desert-gold: #89CFF0;
+  --color-sand-royalty: #A2D9CE;
+  --color-clinical-gray-blue: #FAF9F6;
+  --color-alabaster-sand: #FAF9F6;
+
+  --animate-shimmer: shimmer 2s infinite linear;
+  --animate-fade-in: fadeIn 0.4s ease-out forwards;
+  --animate-breathing-shadow: breatheShadow 3s infinite ease-in-out;
+  --animate-calm-pulse: calmPulse 4s infinite ease-in-out;
+}
+
+@keyframes breatheShadow {
+  0% { box-shadow: 0 0 15px rgba(137, 207, 240, 0.35); }
+  50% { box-shadow: 0 0 45px rgba(137, 207, 240, 0.95); }
+  100% { box-shadow: 0 0 15px rgba(137, 207, 240, 0.35); }
+}
+
+@keyframes calmPulse {
+  0% { opacity: 0.55; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 0.55; transform: scale(0.98); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom shimmer skeleton rules */
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #FAF9F6 25%, #E5E7EB 50%, #FAF9F6 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+
